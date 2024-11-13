@@ -39,6 +39,7 @@ E &= \bra{\Psi} \hat{h} \ket{\Psi} \\
 $$ 
 
 Each term is computed summing the probabilities, $P$, obtained from measuring quantum circuits. In this notebook, we'll show the following identities
+
 $$
 \bra{\Psi} \hat{I} \otimes \hat{I} \ket{\Psi} = P_{\ket{\Psi'}}(\ket{00}) + P_{\ket{\Psi'}}(\ket{01}) + P_{\ket{\Psi'}}(\ket{10}) + P_{\ket{\Psi'}}(\ket{11}) \\ 
 \bra{\Psi} \hat{I} \otimes \hat{Z} \ket{\Psi} = P_{\ket{\Psi'}}(\ket{00}) - P_{\ket{\Psi'}}(\ket{01}) + P_{\ket{\Psi'}}(\ket{10}) - P_{\ket{\Psi'}}(\ket{11}) \\ 
@@ -46,6 +47,7 @@ $$
 \bra{\Psi} \hat{Z} \otimes \hat{Z} \ket{\Psi} = P_{\ket{\Psi'}}(\ket{00}) - P_{\ket{\Psi'}}(\ket{01}) - P_{\ket{\Psi'}}(\ket{10}) + P_{\ket{\Psi'}}(\ket{11}) \\ 
 \bra{\Psi} \hat{X} \otimes \hat{X} \ket{\Psi} = P_{\ket{\Psi'}}(\ket{00}) - P_{\ket{\Psi'}}(\ket{01}) - P_{\ket{\Psi'}}(\ket{10}) + P_{\ket{\Psi'}}(\ket{11}) \\ 
 $$
+
 and use Qiskit to *manually* compute the energy. Finally, we'll compare against the results obtained using Qiskit's built-in class `Estimator()`. 
 
 ## References
